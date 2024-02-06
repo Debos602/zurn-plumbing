@@ -25,6 +25,10 @@ h5 {
 	font-size: 60px;
 	line-height: 1.1;
 }
+p {
+	color: #11305a;
+}
+
 html,
 body {
 	font-weight: 500;
@@ -33,7 +37,8 @@ body {
 	line-height: 1.5;
 }
 .boxed-btn-lg,
-.boxed-btn-md {
+.boxed-btn-md,
+.boxed-btn-sm {
 	display: inline-block;
 	border: 2px solid #4ca1bf;
 	color: #4ca1bf;
@@ -49,17 +54,35 @@ body {
 	color: #ffffff;
 	background-color: #4ca1bf;
 }
+.boxed-btn-sm {
+	padding: 17px 33px;
+}
 .boxed-btn-md:hover {
 	border: 2px solid #fff;
 	background: transparent;
 	color: #fff;
 }
-.boxed-btn-lg:hover {
+.boxed-btn-lg:hover,
+.boxed-btn-sm:hover {
 	background: #4ca1bf;
 	color: #fff;
 }
+.btn-sm-min {
+	display: inline-block;
+	color: #4ca1bf;
+	line-height: 1.75;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.btn-sm-min:hover {
+	color: #11305a;
+}
 .title {
 	font-size: 65px;
+}
+.offcanvas-body a:hover span {
+	color: #11305a;
 }
 a:hover span {
 	color: #fff;
@@ -68,8 +91,14 @@ a:hover span {
 .container-xl {
 	max-width: 1464px;
 }
+.container-md {
+	max-width: 1256px;
+}
 .bg-blue {
 	background-color: #11305a;
+}
+.bg-gray {
+	background-color: #f4f4f4;
 }
 .section-padding {
 	padding: 115px 0;
@@ -87,9 +116,12 @@ a:hover span {
 	margin-top: 30px;
 }
 /*-------------------------------- Header-section--------------------------------- */
+.col-md-3.d-flex.justify-content-end {
+	width: 25%;
+}
 .header {
 	padding: 36px 0;
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	top: 0;
 	left: 0;
@@ -99,22 +131,152 @@ a:hover span {
 	width: 214px;
 	height: 105px;
 }
+.logo img.colo-img {
+	display: none;
+}
+
+.header.stick .logo img.colo-img {
+	display: block;
+}
+header.header.stick .logo img.white-logo {
+	display: none;
+}
+
 .main-menu ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 .main-menu li {
-	padding-left: 47px;
+	padding: 0 23px;
 }
 .main-menu li a {
 	color: #ffffff;
-
+	transition: 0.2s;
 	font-size: 24px;
 	font-weight: 700;
 }
+.main-menu li:hover a {
+	color: #4ca1bf;
+	border-bottom: 3px solid #4ca1bf;
+}
 
+header.header.stick {
+	background: #fff;
+	border-bottom: 15px solid #4ca1bf;
+}
+
+header.header.stick .main-menu li a {
+	color: #4ca1bf;
+}
+.header-section button.btn {
+	display: none;
+}
+
+/*---------------------------- MEGA-MENU---------------- -----*/
+.mega-menu.show {
+	opacity: 1;
+	visibility: visible;
+}
+.header-wid h6 a {
+	font-size: 22px;
+	color: #11305a;
+	line-height: 1;
+	font-weight: 900;
+}
+.mega-menu .row {
+	--bs-gutter-x: 70px;
+}
+.header-wid h6:hover a {
+	color: #4ca1bf;
+}
+.header-wid ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.header-wid li a {
+	color: #11305a;
+	line-height: 2.2;
+}
+.header-wid li:hover a {
+	color: #4ca1bf;
+}
+
+.header-wid h6 {
+	margin-bottom: 24px;
+	border-bottom: 1px solid #11305a;
+	padding: 10px 0;
+	font-weight: 900;
+	font-size: 22px;
+}
+.global-div {
+	position: relative;
+	z-index: 1;
+}
+
+.global-div:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 1000%;
+	background: #11305a;
+	content: "";
+	z-index: -1;
+}
+
+.header-wid.header-right {
+	text-align: center;
+	width: 333px;
+	margin-left: 45px;
+	margin-top: 0;
+}
+.mega-menu {
+	position: fixed;
+	top: 190px;
+	left: 0;
+	transition: all 0.3s ease-in-out;
+	width: 100%;
+	z-index: 11;
+	background: #f4f9fa;
+	opacity: 0;
+	visibility: hidden;
+}
+.header-wid {
+	margin-top: 50px;
+}
+
+.header-link a {
+	font-size: 16px;
+	color: #fff;
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.header-link {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.header-wid .phone-number {
+	margin-top: 20px;
+	color: #fff;
+	font-size: 32px;
+}
 /*------------------------- Hero Section-------------------------------------- */
+.hero-bg {
+	background-image: url(../assets/backgroundImage/about-zurn-plumbing.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 474px;
+	margin-top: 191.4px;
+	position: relative;
+	z-index: 1;
+}
+
 .hero-section {
 	height: 100vh;
 	padding-bottom: 78px;
@@ -126,6 +288,7 @@ a:hover span {
 	align-items: end;
 	position: relative;
 }
+.hero-bg:after,
 .hero-section:after {
 	position: absolute;
 	top: 0;
@@ -146,12 +309,29 @@ a:hover span {
 	z-index: -1;
 	object-fit: cover;
 }
+.hero-bg .hero-section-inner {
+	height: 426px;
+}
 .hero-section-inner .title {
 	color: #fff;
 	margin-bottom: 17px;
+	height: 100%;
+	display: flex;
+	align-items: end;
 }
 .hero-section-inner p {
 	line-height: 1.5;
+	color: #ffffff;
+}
+.hero-section-inner .boxed-btn-md {
+	background-color: transparent;
+	border-color: #ffff;
+	transition: 0.3s;
+}
+
+.hero-section-inner .boxed-btn-md:hover {
+	background-color: #4ca1bf;
+	border: 2px solid #4ca1bf;
 }
 .play-icon {
 	font-size: 22px;
@@ -189,7 +369,10 @@ a:hover span {
 	z-index: 1;
 	padding: 32px 0;
 }
-
+.about-content-block.section-padding {
+	padding: 92px 0;
+}
+.about-content.content-thumbnail::after,
 .content-thumbnail:after {
 	position: absolute;
 	top: 0;
@@ -200,17 +383,29 @@ a:hover span {
 	background: #bfdbe8;
 	z-index: -1;
 }
+.about-content.content-thumbnail:after {
+	left: auto;
+	right: 32px;
+}
 
 .content-block-inner {
 	max-width: 85%;
+}
+.content-block-inner.about-inner .boxed-btn-md:hover {
+	color: #4ca1bf;
+	border: 2px solid #4ca1bf;
 }
 
 .content-block-inner h2 {
 	margin-bottom: 23px;
 }
+.content-block-inner.about-inner h2 {
+	margin-bottom: 37px;
+}
 .our-service-block h2 {
 	margin-bottom: 11px;
 }
+
 .our-service-block .service-text {
 	max-width: 70%;
 	color: #fcfaf6;
@@ -368,11 +563,23 @@ a:hover span {
 }
 /*-------------------FOOTER SECTION----------------------*/
 .footer-section {
-	padding: 80px 0;
+	padding: 50px 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	/* z-index: 999; */
 }
 
 .footer-logo img {
 	width: 258.24px;
+}
+.footer-one ul li,
+.footer-two ul li {
+	transition: 0.3s;
+}
+.footer-one ul li:hover a,
+.footer-two ul li:hover a {
+	color: #4ca1bf;
 }
 .text-right {
 	text-align: end;
@@ -406,6 +613,12 @@ a:hover span {
 
 .footer-bottom-inner li {
 	margin-bottom: 26px;
+}
+.site-footer-wrapper {
+	margin-bottom: 697.17px;
+	position: relative;
+	z-index: 9;
+	background-color: #fff;
 }
 
 .footer-bottom-inner li a {
@@ -496,4 +709,521 @@ a:hover span {
 
 .pipe-image > div:nth-child(2) {
 	z-index: 2;
+}
+
+/* --------------ABOUT PAGE STYLE------------------ */
+.about-service-block h2 {
+	font-size: 50px;
+	line-height: 1.3;
+	width: 91%;
+}
+.link-block.about-link-block li a {
+	color: #11305a;
+}
+
+.link-block.about-link-block li:not(:last-child):before {
+	border-bottom: 1px solid #11305a;
+}
+.link-block.about-link-block li:last-child:before,
+.link-block.about-link-block li:last-child:after {
+	border-top: 1px solid #11305a;
+}
+.about-link-block li:hover a span {
+	color: #11305a;
+}
+.hero-bg.Resource {
+	background-image: url(../assets/image/Resources.jpg);
+}
+/* ------------------RESOURCE PAGE STYLE----------------- */
+.resource-content-block {
+	padding: 95px 0;
+}
+.content-block-inner.resource-inner h2 {
+	font-size: 35px;
+}
+.content-block-inner.resource-inner p {
+	color: #11305a;
+}
+.content-block-inner.resource-inner {
+	max-width: 72%;
+}
+.resource-card {
+	padding: 156px 0;
+	background-color: rgba(191, 219, 232, 0.15);
+	border-radius: 136px 136px 0 0;
+}
+.resource-card-inner h4 {
+	margin: 19px 0;
+	font-size: 35px;
+}
+.resource-card .row {
+	--bs-gutter-x: 86px;
+	--bs-gutter-y: 64px;
+}
+/* ------------------SERVICE-AREA-PAGE-STYLE------------------- */
+
+.hero-bg.service-area {
+	background-image: url(../assets/backgroundImage/Service-area.jpg);
+}
+.map {
+	height: 641px;
+	margin-right: -42px;
+}
+.areas li a {
+	font-size: 23px;
+	color: #11305a;
+	font-weight: 2.2;
+	display: block;
+}
+.areas-wrap .areas {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.areas li {
+	position: relative;
+	padding: 10px 0;
+}
+
+.areas li:before {
+	position: absolute;
+	height: 8px;
+	top: 50%;
+	left: -12px;
+	width: 8px;
+	background-color: #4ca1bf;
+	content: "";
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+}
+.content-block-inner.service-area-inner {
+	margin-left: 180px;
+}
+.header-wid .areas li {
+	padding: 0;
+}
+.header-wid .areas li a {
+	font-size: 19px;
+}
+.header.stick .side-btn .boxed-btn-md:hover {
+	color: #4ca1bf;
+	border: 2px solid #4ca1bf;
+}
+
+/*------------- RASIDENTIAL PLUMBING STYLE-------------- */
+.hero-bg.residential-area {
+	background-image: url(../assets/backgroundImage/Residential-plumbing-bg.jpg);
+}
+.rasidential-content.content-thumbnail {
+	max-width: 621px;
+}
+
+.rasidential-content.content-thumbnail:after {
+	left: -32px;
+}
+.content-block-inner.rasidential-inner h2 {
+	font-size: 35px;
+	line-height: 1.1;
+	margin-bottom: 44px;
+}
+.content-block-inner.rasidential-inner .secondary-para {
+	font-size: 19px;
+	line-height: 1.5;
+	font-weight: 700;
+}
+.rasidential-padding {
+	padding: 117px;
+	background-color: rgba(191, 219, 232, 0.15);
+	border-radius: 166px 166px 0 0;
+}
+.rasidential-wrapper {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.rasidential-wrapper li {
+	padding: 15px 0;
+	transition: 0.3s;
+}
+.rasidential-wrapper li .number {
+	font-size: 20px;
+	color: #4ca1bf;
+	line-height: 1.2;
+	opacity: 50%;
+	transition: 0.3s;
+}
+.rasidential-wrapper li .link-heading {
+	font-size: 40px;
+	color: #11305a;
+	width: 80%;
+	transition: 0.3s;
+}
+
+.rasidential-wrapper li img {
+	width: 51px;
+	transition: 0.3s;
+}
+.rasidential-wrapper li {
+	position: relative;
+}
+
+.rasidential-wrapper li:after,
+.rasidential-wrapper li:last-child:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-top: 1px solid #11305a;
+	content: "";
+	opacity: 30%;
+}
+.rasidential-wrapper li:last-child:before {
+	border-bottom: 1px solid #000;
+	bottom: 0;
+}
+.rasidential-wrapper li:hover .number {
+	opacity: 100%;
+}
+.rasidential-wrapper li:hover .link-heading {
+	color: #4ca1bf;
+	padding-left: 20px;
+}
+.rasidential-wrapper li:hover img {
+	transform: rotate(-45deg);
+}
+.rasidential-padding .row {
+	--bs-gutter-x: 90px;
+}
+
+/* ---------------------COMMERCIAL-PLUMBING------------------- */
+
+.hero-bg.commercial-area {
+	background-image: url(../assets/backgroundImage/commercial-plumbing-bg.jpg);
+}
+/* ------------------------CONTACT-AREA-STYLE------------------- */
+
+.hero-bg.contact-area {
+	background-image: url(../assets/backgroundImage/contactImage.jpg);
+}
+.emergency-bar {
+	background-color: #4ca1bf;
+	font-size: 35px;
+	color: #ffffff;
+	font-weight: 700;
+	line-height: 1.2;
+	padding: 39px 0;
+}
+.contact-section {
+	padding: 85px 0;
+	position: relative;
+	z-index: 1;
+}
+.contact-section h2 {
+	font-size: 35px;
+	margin-bottom: 40px;
+}
+
+.contact-field {
+	background-color: #11305a;
+	padding: 43px 28px;
+	border-radius: 28px;
+	width: 79%;
+}
+.contact-field .mb-3 {
+	margin-bottom: 28px !important;
+}
+.contact-field .boxed-btn-md {
+	margin: 13px 0;
+}
+.contact-field input.form-control {
+	padding: 12px 7px 12px 24px;
+}
+.contact-field textarea.form-control {
+	padding: 12px 7px 28px 24px;
+}
+.contact-field .boxed-btn-md {
+	padding: 17px 80px;
+}
+.contact-section-inner h1 {
+	margin-bottom: 23px;
+}
+
+.content-block-inner.contact-section-inner p {
+	margin-bottom: 13px;
+}
+.contact-section-inner .section-margin {
+	margin-top: 140px;
+}
+.contact-section:after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 500px;
+	background-color: #e5f1f6;
+	bottom: 0;
+	z-index: -1;
+}
+.contact-section-inner h3 {
+	font-size: 40px;
+	color: #4ca1bf;
+}
+.offcanvas-body .main-menu li:hover a {
+	border-bottom: 0;
+}
+
+/* ------------------------TRENCHLESS-SECTION-STYLE------------------------ */
+
+.hero-bg.trenchless-bg {
+	background-image: url(../assets/backgroundImage/trenchless.html.jpg);
+}
+section.our-service.drill-section {
+	padding: 115px 0;
+	background-color: rgb(191, 219, 232, 0.15);
+}
+
+.drill-section .drill-icon img {
+	width: 194px;
+	height: 76px;
+}
+.drill-section .drill-icon img.cast-iron {
+	height: 180px;
+	width: 146px;
+}
+.drill-icon {
+	height: 265px;
+	width: 265px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #707070;
+	border-radius: 50%;
+	margin: 0 auto 32px;
+}
+.drill-inner p {
+	font-size: 40px;
+}
+.drill-inner a.boxed-btn-md {
+	padding: 17px 59px;
+}
+.drill-inner a:hover {
+	color: #4ca1bf;
+	border: 2px solid #4ca1bf;
+}
+/* -----------------PLUMBING-REPAIR-STYLE----------------- */
+.hero-bg.plumbing-repair-bg {
+	background-image: url(../assets/backgroundImage/plumbing-repair-bg.jpg);
+}
+.content-block.plumbing-repair-section {
+	padding: 90px 0;
+}
+
+.content-block-inner.plumbing-repair h2 {
+	font-size: 35px;
+	line-height: 1.5;
+}
+.repair-link {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.repair-link li a {
+	color: #11305a;
+}
+.repair-link li {
+	position: relative;
+	z-index: 1;
+}
+
+.repair-link li:after {
+	position: absolute;
+	top: 50%;
+	left: -15px;
+	height: 8px;
+	width: 8px;
+	background-color: #4ca1bf;
+	content: "";
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+}
+.plumbing-repair-section h5 {
+	margin-top: 18px;
+	line-height: 1.5;
+}
+
+.plumbing-repair h5 {
+	font-size: 19px;
+}
+
+.plumbing-repair p {
+	line-height: 1.3;
+}
+.plumbing-repair-wrapper {
+	padding-left: 20px;
+}
+.plumbing-repair a.boxed-btn-lg {
+	padding: 17px 62px;
+}
+.about-content.content-thumbnail.plumbing-repair-thumbnail:after {
+	right: auto;
+	left: 32px;
+}
+.plumbing-repair-section .row {
+	--bs-gutter-x: 14px;
+}
+.plumbing-link li a {
+	color: #fff;
+}
+.plumbing-repair-block .about-service-block h2 {
+	font-size: 60px;
+	line-height: 1.1;
+}
+.plumbing-repair-block p {
+	font-size: 16px;
+	color: #4ca1bf;
+	line-height: 2.1;
+}
+.about-service-block.serve {
+	padding: 68px 0;
+}
+.plumbing-repair-block {
+	position: relative;
+	z-index: -1;
+}
+.serve-bg-img {
+	background-image: url(../assets/image/plumbing-repair-img2.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	right: 0;
+	z-index: -1;
+}
+.Financing .boxed-btn-lg {
+	padding: 17px 74px;
+}
+/* ------------------------DRAIN-CLEANING-STYLE--------------------- */
+.hero-bg.drain-bg {
+	background-image: url(../assets/backgroundImage/Drain-cleaning.jpg);
+}
+
+/* ----------------SEWER-SYSTEM-STYLE------------ */
+
+.hero-bg.Sewer-bg {
+	background-image: url(../assets/backgroundImage/Sewer.jpg);
+}
+.sewer-inner h2 {
+	font-size: 35px;
+}
+
+.sewer-inner h4 {
+	font-size: 19px;
+}
+.hero-bg.water-heater-bg {
+	background-image: url(../assets/backgroundImage/water-heater.jpg);
+}
+/* -----------------WATER-HEATER-STYLE---------------- */
+.water-heater-inner p {
+	margin-bottom: 30px;
+}
+
+/* -------------FAQS-STYLE------------ */
+.faqs-bg {
+	background-image: url(../assets/image/FAQS.jpg);
+}
+.accordion-button::after {
+	background-image: none !important;
+	content: "+";
+	transform: none !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+	content: "-";
+}
+.accordion-section {
+	padding: 90px 0;
+}
+.accordion-item:first-of-type {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+.accordion-item {
+	background-color: #fff;
+	border: 0;
+}
+.accordion-item:first-of-type .accordion-button {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+.accordion-button:not(.collapsed) {
+	color: #11305a;
+	background-color: #fff;
+	box-shadow: 0 0 0 0;
+}
+.accordion-button:focus {
+	z-index: 3;
+	border-color: 0;
+	outline: 0;
+	box-shadow: 0 0 0 0;
+}
+.accordion-item h2 button {
+	font-size: 28px;
+	color: #11305a;
+	line-height: 1.1;
+}
+.accordion-item h2 {
+	border-top: 1px solid rgb(17, 48, 90, 80%);
+	padding-top: 28px;
+	padding-bottom: 28px;
+}
+.accordion-item:last-child h2 {
+	border-bottom: 1px solid rgb(17, 48, 90, 80%);
+}
+.hero-bg.promotion-bg {
+	background-image: none;
+	background-color: #11305a;
+	position: relative;
+	z-index: 1;
+}
+.hero-bg.promotion-bg:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: transparent
+		linear-gradient(180deg, #11305a 0%, #3f88a9a6 50%, #11305a 100%) 0% 0%
+		no-repeat padding-box;
+	content: "";
+	opacity: 0.81;
+}
+.promotion-block {
+	padding: 108px 0;
+	overflow: hidden;
+}
+
+.promotion-block-inner h2 {
+	margin: 19px 0 13px;
+	font-size: 35px;
+}
+
+.promotion-block-inner img {
+	/* max-height: 389px; */
+}
+.promotion-block-inner a.boxed-btn-sm {
+	border: none;
+	color: #4ca1bf;
+	padding: 0;
+}
+
+.promotion-block-inner a.boxed-btn-sm:hover {
+	background-color: transparent;
+}
+.promotion-block .row {
+	--bs-gutter-x: 86px;
 }
