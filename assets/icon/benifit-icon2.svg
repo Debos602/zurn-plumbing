@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="106.481" height="95.688" viewBox="0 0 106.481 95.688">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_282" data-name="Rectangle 282" width="106.481" height="95.688" fill="none" stroke="#4ca1bf" stroke-width="6"/>
+    </clipPath>
+  </defs>
+  <g id="benifit-icon2" transform="translate(0 0)">
+    <g id="Group_2533" data-name="Group 2533" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <path id="Path_742" data-name="Path 742" d="M6,41.84H6l-.009.009A25.546,25.546,0,0,1,22.982.653c11.7-1.367,24.261,6.589,28.631,16.4C55.978,7.242,68.539-.714,80.243.653a25.55,25.55,0,0,1,16.994,41.2l-.009-.009L51.608,91.924Z" transform="translate(1.628 1.631)" fill="none" stroke="#4ca1bf" stroke-linejoin="round" stroke-width="6"/>
+      <path id="Path_743" data-name="Path 743" d="M85.746,27.131H64.032l-6.478,12.6L51.7,14.413,40.479,42.276,31.053,6.469l-5.78,20.662H2.9" transform="translate(9.464 21.086)" fill="none" stroke="#4ca1bf" stroke-linejoin="round" stroke-width="6"/>
+    </g>
+  </g>
+</svg>

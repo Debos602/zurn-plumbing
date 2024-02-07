@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="125" height="123.211" viewBox="0 0 125 123.211">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_281" data-name="Rectangle 281" width="125" height="123.211" fill="none" stroke="#4ca1bf" stroke-width="6"/>
+    </clipPath>
+  </defs>
+  <g id="benifit-icon1" transform="translate(0 0)">
+    <g id="Group_2531" data-name="Group 2531" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <path id="Path_739" data-name="Path 739" d="M29.8,48.732c0-6.095,5.6-11.041,12.515-11.041s12.515,4.946,12.515,11.041c0-6.095,5.607-11.041,12.52-11.041s12.515,4.946,12.515,11.041c0-6.095,5.6-11.041,12.515-11.041s12.52,4.946,12.52,11.041l.508.03c.066-.951.1-1.906.1-2.867,0-24.689-22.691-44.7-50.679-44.7S4.152,21.206,4.152,45.9c0,.961.036,1.916.1,2.867l.513-.03c0-6.095,5.6-11.041,12.515-11.041S29.8,42.637,29.8,48.732c0,0-7.162-30.728,25.029-46.587V48.732" transform="translate(16.953 4.895)" fill="none" stroke="#4ca1bf" stroke-linejoin="round" stroke-width="6"/>
+      <path id="Path_740" data-name="Path 740" d="M39.151,47.972S46.314,17.244,14.122,1.385" transform="translate(57.662 5.654)" fill="none" stroke="#4ca1bf" stroke-linejoin="round" stroke-width="6"/>
+      <line id="Line_75" data-name="Line 75" y2="95.131" transform="translate(71.78 -0.001)" fill="none" stroke="#4ca1bf" stroke-linejoin="round" stroke-width="6"/>
+      <path id="Path_741" data-name="Path 741" d="M114.72,60.149H33.354a13.154,13.154,0,0,1-11.173-6.217L1.355,20.348a5.694,5.694,0,0,1,9.678-6L31.859,47.929a1.761,1.761,0,0,0,1.494.834H114.72a5.693,5.693,0,1,1,0,11.386Z" transform="translate(2.04 47.583)" fill="none" stroke="#4ca1bf" stroke-linejoin="round" stroke-width="6"/>
+      <line id="Line_76" data-name="Line 76" y2="14.716" transform="translate(71.702 107.278)" fill="none" stroke="#4ca1bf" stroke-linejoin="round" stroke-width="6"/>
+      <line id="Line_77" data-name="Line 77" x1="8.016" y2="14.716" transform="translate(20.951 107.278)" fill="none" stroke="#4ca1bf" stroke-linejoin="round" stroke-width="6"/>
+      <line id="Line_78" data-name="Line 78" x2="7.731" y2="14.223" transform="translate(114.724 107.775)" fill="none" stroke="#4ca1bf" stroke-linejoin="round" stroke-width="6"/>
+    </g>
+  </g>
+</svg>
